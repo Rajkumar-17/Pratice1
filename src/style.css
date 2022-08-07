@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: black;
+    color: white;
+}
+.tt {
+    font-size: 32px;
+}
+
+.cards-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    overflow-x: auto;
+}
+
+.card {
+    width: 250px;
+    flex: 0 0 auto;         /* ADD */
+    display: flex;
+    font-size: 12px;          /* ADD */
+    flex-direction: column; /* ADD */
+    position: relative;
+}
+
+.card--image {
+    width: 100%;
+    border-radius: 9px;
+}
+
+.card--title {
+    margin: 2px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    align-items: center;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.card--stats {
+    display: flex;
+    margin-top: 3px;
+    align-items: center;
+    font-size: 12px;
+    gap: 70px;
+    color: gray;
+}
+.gray {
+    background-color: gray;
+    color: white;
+}
+
+.card--description {
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.card--badge {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    border-radius: 2px;
+    
+}
+
+.card--utube {
+    height: 40px;
+    width: 60px;
+}
+.card--utube:hover{
+    cursor: pointer;
+}
